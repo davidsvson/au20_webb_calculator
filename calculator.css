@@ -42,7 +42,21 @@
 }
 
 .calc_sign:active, .calc_number:active {
-    transform: translateY(3px);
+    transform: translate3d(3px, 3px, 0px);
+}
+
+#result_block {
+    display: block;
+    position: absolute;
+    background-color: lightgray;
+    width: 500px;
+    height: 500px;
+    left: 35%;
+    top: 10%;
+}
+
+#results {
+    list-style: none;
 }
 
 
