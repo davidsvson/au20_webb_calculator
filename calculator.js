@@ -4,8 +4,16 @@ let result = document.getElementById('result');
 let resultsList = document.getElementById('results');
 let firstInput = true;
 
-for(let i=0; i < numbers.length; i++) {
-    numbers[i].addEventListener('click', numberListener);
+//for(let i=0; i < numbers.length; i++) {
+//    numbers[i].addEventListener('click', numberListener);
+//}
+
+//Array.from(numbers).forEach( (number) => {
+//    number.addEventListener('click', signListener);
+//})
+
+for (const number of numbers) {
+   number.addEventListener('click', signListener);
 }
 
 for(let i=0; i < signs.length; i++) {
